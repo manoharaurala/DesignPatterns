@@ -1,17 +1,19 @@
 package models;
 
 import enums.BirdType;
+import enums.Colour;
+import enums.Size;
 
 
 public abstract class Bird {
 
     private Integer weight;
-    private String colour;
-    private String size;
+    private Colour colour;
+    private Size size;
     private String beakType;
     private BirdType type;
 
-    public Bird(Integer weight, String colour, String size, String beakType, BirdType type) {
+    public Bird(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
         this.weight = weight;
         this.colour = colour;
         this.size = size;
@@ -25,11 +27,11 @@ public abstract class Bird {
         return weight;
     }
 
-    public String getColour() {
+    public Colour getColour() {
         return colour;
     }
 
-    public String getSize() {
+    public Size getSize() {
         return size;
     }
 
