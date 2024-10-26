@@ -6,7 +6,7 @@ import SOLID.enums.Size;
 import SOLID.services.Flyable;
 
 public class Parrot extends Bird implements Flyable {
-    public Parrot(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
+    public Parrot(Integer weight, Colour colour, Size size, Beak beakType, BirdType type) {
         super(weight, colour, size, beakType, type);
     }
 

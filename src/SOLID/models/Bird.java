@@ -10,10 +10,10 @@ public abstract class Bird {
     private final Integer weight;
     private final Colour colour;
     private final Size size;
-    private final String beakType;
+    private final Beak beakType;
     private final BirdType type;
 
-    public Bird(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
+    public Bird(Integer weight, Colour colour, Size size, Beak beakType, BirdType type) {
         this.weight = weight;
         this.colour = colour;
         this.size = size;
@@ -41,7 +41,7 @@ public abstract class Bird {
         return size;
     }
 
-    public String getBeakType() {
+    public Beak getBeakType() {
         return beakType;
     }
 

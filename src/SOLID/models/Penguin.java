@@ -6,7 +6,7 @@ import SOLID.enums.Size;
 import SOLID.services.Swimmable;
 
 public class Penguin extends Bird implements Swimmable {
-    public Penguin(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
+    public Penguin(Integer weight, Colour colour, Size size, Beak beakType, BirdType type) {
         super(weight, colour, size, beakType, type);
     }
 

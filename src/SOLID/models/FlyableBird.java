@@ -6,7 +6,7 @@ import SOLID.enums.Size;
 
 public abstract class FlyableBird extends Bird {
 
-    public FlyableBird(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
+    public FlyableBird(Integer weight, Colour colour, Size size, Beak beakType, BirdType type) {
         super(weight, colour, size, beakType, type);
     }
 
