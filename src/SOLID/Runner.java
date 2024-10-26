@@ -3,9 +3,11 @@ package SOLID;
 import SOLID.enums.BirdType;
 import SOLID.enums.Colour;
 import SOLID.enums.Size;
-import SOLID.models.*;
+import SOLID.models.Eagle;
+import SOLID.models.Parrot;
+import SOLID.models.Penguin;
+import SOLID.models.Sparrow;
 import SOLID.services.Flyable;
-
 
 import java.util.List;
 
@@ -21,21 +23,21 @@ public class Runner {
         eagle.eat();
         eagle.sleep();
 
-        Sparrow sparrow=new Sparrow(30,Colour.BROWN,Size.LARGE,"Sharp",BirdType.Sparrow);
+        Sparrow sparrow = new Sparrow(30, Colour.BROWN, Size.LARGE, "Sharp", BirdType.Sparrow);
         sparrow.fly();
         sparrow.eat();
         sparrow.sleep();
 
-        Penguin penguin=new Penguin(25,Colour.WHITE,Size.LARGE,"NonSharp",BirdType.Penguin);
+        Penguin penguin = new Penguin(25, Colour.WHITE, Size.LARGE, "NonSharp", BirdType.Penguin);
         penguin.swim();
         penguin.eat();
         penguin.sleep();
 
-        List<Flyable>birds= List.of(parrot,eagle,sparrow);
+        List<Flyable> birds = List.of(parrot, eagle, sparrow);
         flyAll(birds);
     }
 
-    public static void flyAll(List<Flyable>birds){
+    public static void flyAll(List<Flyable> birds) {
         birds.forEach(Flyable::fly);
     }
 }
