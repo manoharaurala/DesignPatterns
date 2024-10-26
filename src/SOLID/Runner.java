@@ -4,8 +4,9 @@ import SOLID.enums.BirdType;
 import SOLID.enums.Colour;
 import SOLID.enums.Size;
 import SOLID.models.*;
+import SOLID.services.Flyable;
 
-import java.util.Arrays;
+
 import java.util.List;
 
 public class Runner {
@@ -30,14 +31,11 @@ public class Runner {
         penguin.eat();
         penguin.sleep();
 
-        List<Bird>birds= Arrays.asList(parrot,eagle,sparrow,penguin);
+        List<Flyable>birds= List.of(parrot,eagle,sparrow);
         flyAll(birds);
     }
 
-    public static void flyAll(List<Bird>birds){
-        birds.forEach(e->{
-                    e.eat();
-                    e.sleep();
-                });
+    public static void flyAll(List<Flyable>birds){
+        birds.forEach(Flyable::fly);
     }
 }
