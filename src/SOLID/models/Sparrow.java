@@ -3,8 +3,9 @@ package SOLID.models;
 import SOLID.enums.BirdType;
 import SOLID.enums.Colour;
 import SOLID.enums.Size;
+import SOLID.services.Flyable;
 
-public class Sparrow extends FlyableBird{
+public class Sparrow extends Bird implements Flyable {
     public Sparrow(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
         super(weight, colour, size, beakType, type);
     }
