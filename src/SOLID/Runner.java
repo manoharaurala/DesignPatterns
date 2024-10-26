@@ -35,8 +35,7 @@ public class Runner {
     }
 
     public static void flyAll(List<Bird>birds){
-        birds.stream()
-                .forEach(e->{
+        birds.forEach(e->{
                     e.eat();
                     e.sleep();
                 });
