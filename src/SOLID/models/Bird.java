@@ -1,8 +1,8 @@
-package models;
+package SOLID.models;
 
-import enums.BirdType;
-import enums.Colour;
-import enums.Size;
+import SOLID.enums.BirdType;
+import SOLID.enums.Colour;
+import SOLID.enums.Size;
 
 
 public abstract class Bird {
@@ -21,7 +21,13 @@ public abstract class Bird {
         this.type = type;
     }
 
-    public abstract void fly();
+    public void eat(){
+        System.out.println("Bird is so Hungry and Eating now");
+    }
+
+    public void sleep(){
+        System.out.println("Bird is sleeping now");
+    }
 
     public Integer getWeight() {
         return weight;

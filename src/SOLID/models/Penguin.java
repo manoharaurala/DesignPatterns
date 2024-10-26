@@ -1,0 +1,17 @@
+package SOLID.models;
+
+import SOLID.enums.BirdType;
+import SOLID.enums.Colour;
+import SOLID.enums.Size;
+
+public class Penguin extends NonFlyableBird{
+    public Penguin(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
+        super(weight, colour, size, beakType, type);
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("\nPenguin is swimming");
+
+    }
+}

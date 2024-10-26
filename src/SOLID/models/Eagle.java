@@ -1,10 +1,10 @@
-package models;
+package SOLID.models;
 
-import enums.BirdType;
-import enums.Colour;
-import enums.Size;
+import SOLID.enums.BirdType;
+import SOLID.enums.Colour;
+import SOLID.enums.Size;
 
-public class Eagle extends Bird{
+public class Eagle extends FlyableBird{
 
     public Eagle(Integer weight, Colour colour, Size size, String beakType, BirdType type) {
         super(weight, colour, size, beakType, type);
