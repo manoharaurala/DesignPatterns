@@ -1,4 +1,4 @@
-package creational.builder;
+package creational.builder.database;
 
 public class Database {
     private String name;

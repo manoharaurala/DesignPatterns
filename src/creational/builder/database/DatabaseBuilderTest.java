@@ -1,6 +1,7 @@
-package creational.builder;
+package creational.builder.database;
 
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -15,7 +16,7 @@ public class DatabaseBuilderTest {
                 .build();
         assertNotNull(database,"If build method is called, database object should not be null");
         assertEquals("test",database.getName(),"If name is set, on fetching it should be the same");
-        assertEquals(DatabaseType.MYSQL,database.getType(),"If mysql is set, on fetching it should be the same");
+        Assertions.assertEquals(DatabaseType.MYSQL,database.getType(),"If mysql is set, on fetching it should be the same");
     }
 
 }
