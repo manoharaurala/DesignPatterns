@@ -1,9 +1,6 @@
 package creational.factory.simplefactory.button.test;
 
-import creational.factory.simplefactory.button.Button;
-import creational.factory.simplefactory.button.RoundButton;
-import creational.factory.simplefactory.button.ScreenSize;
-import creational.factory.simplefactory.button.SquareButton;
+import creational.factory.simplefactory.button.*;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

@@ -1,4 +1,4 @@
-package creational.factory.simplefactory.button.test;
+package creational.factory.simplefactory.button;
 
 import creational.factory.simplefactory.button.Button;
 import creational.factory.simplefactory.button.RoundButton;
