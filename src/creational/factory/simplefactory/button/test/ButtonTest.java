@@ -1,6 +1,10 @@
 package creational.factory.simplefactory.button.test;
 
-import creational.factory.simplefactory.button.*;
+import creational.factory.simplefactory.button.buttonproduct.Button;
+import creational.factory.simplefactory.button.buttonproduct.RoundButton;
+import creational.factory.simplefactory.button.buttonproduct.SquareButton;
+import creational.factory.simplefactory.button.enums.ScreenSize;
+import creational.factory.simplefactory.button.factory.ButtonFactory;
 import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;

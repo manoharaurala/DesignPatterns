@@ -1,4 +1,4 @@
-package creational.factory.simplefactory.button;
+package creational.factory.simplefactory.button.buttonproduct;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

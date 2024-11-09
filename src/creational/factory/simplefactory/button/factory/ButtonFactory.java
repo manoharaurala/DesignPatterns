@@ -1,4 +1,9 @@
-package creational.factory.simplefactory.button;
+package creational.factory.simplefactory.button.factory;
+
+import creational.factory.simplefactory.button.enums.ScreenSize;
+import creational.factory.simplefactory.button.buttonproduct.Button;
+import creational.factory.simplefactory.button.buttonproduct.RoundButton;
+import creational.factory.simplefactory.button.buttonproduct.SquareButton;
 
 public class ButtonFactory {
     // Step 3 - Create a static factory method

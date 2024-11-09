@@ -1,5 +1,6 @@
-package creational.factory.simplefactory.button;
+package creational.factory.simplefactory.button.buttonproduct;
 
+import creational.factory.simplefactory.button.buttonproduct.Button;
 import lombok.Getter;
 
 @Getter
