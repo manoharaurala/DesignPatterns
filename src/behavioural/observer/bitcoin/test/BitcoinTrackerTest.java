@@ -30,4 +30,5 @@ public class BitcoinTrackerTest {
         Bitcoin bitcoin = tracker.getBitcoin();
         Assertions.assertEquals(100.0, bitcoin.getPrice(), 0.0);
     }
+
 }
