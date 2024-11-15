@@ -9,8 +9,13 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class BitcoinTrackerTest {
-    BitcoinTracker tracker;
 
+    //Setup==>Create the dependencies
+
+    //TearDown=>Destroy the dependencies
+
+    BitcoinTracker tracker;
+    //Setup==>Create the dependencies
     @BeforeEach
     public void setup() {
         tracker = new BitcoinTracker();
