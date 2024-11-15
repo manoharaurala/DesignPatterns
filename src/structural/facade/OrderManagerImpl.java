@@ -1,7 +1,11 @@
 package structural.facade;
 
 public class OrderManagerImpl implements OrderManager {
-    private OrderProcessor orderProcessor;
+    private final OrderProcessor orderProcessor;
+
+    public OrderManagerImpl() {
+        orderProcessor = new OrderProcessor();
+    }
 
     @Override
     public void createOrder() {

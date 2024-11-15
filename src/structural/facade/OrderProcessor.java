@@ -1,9 +1,15 @@
 package structural.facade;
 
 public class OrderProcessor {
-    private RecommendationService recommendationService;
-    private PaymentService paymentService;
-    private WarehouseProcessor processor;
+    private final RecommendationService recommendationService;
+    private final PaymentService paymentService;
+    private final WarehouseProcessor processor;
+
+    public OrderProcessor() {
+        recommendationService = new RecommendationService();
+        paymentService = new PaymentService();
+        processor = new WarehouseProcessor();
+    }
 
     public void process() {
         processor.process();

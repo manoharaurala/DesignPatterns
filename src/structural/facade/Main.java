@@ -1,9 +1,9 @@
 package structural.facade;
 
 public class Main {
-    private static final OrderFlowProcessor orderFlowProcessor = new OrderFlowProcessor();
+    private static final OrderManager orderManager = new OrderManagerImpl();
 
     public static void main(String[] args) {
-        orderFlowProcessor.process();
+        orderManager.createOrder();
     }
 }
